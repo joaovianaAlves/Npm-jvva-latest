@@ -1,0 +1,29 @@
+{
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "incremental": true,            
+    "target": "es5",                
+    "module": "ESNext",
+    "lib": ["DOM","ES2017","ES7","ES6"],
+    "importHelpers": true,           
+    "declaration": true,
+    "sourceMap": true,    
+    "rootDir": "./src",
+    "outDir": "./dist/esm",
+    "strict": true,
+    "noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"moduleResolution": "node",
+		"jsx": "react",
+		"baseUrl": "./src",             
+    "esModuleInterop": true,        
+    "skipLibCheck": true,           
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+			"react": ["../node_modules/@types/react/index"]
+		}
+  },
+}
