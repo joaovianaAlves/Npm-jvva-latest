@@ -1,6 +1,6 @@
 {
   "name": "@jvva/utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
@@ -14,8 +14,11 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "dev": "next dev",
+    "create-project": "npx create-next-app . && npm install tailwindcss autoprefixer postcss && npx tailwindcss init",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint"
+    "prepublishOnly": "npm run lint",
+    "postinstall": "npm run create-project"
   },
   "keywords": [],
   "author": "joao vitor viana alves/jvva",
