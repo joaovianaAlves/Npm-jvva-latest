@@ -17,8 +17,7 @@
     "dev": "next dev",
     "create-project": "npx create-next-app . && npm install tailwindcss autoprefixer postcss && npx tailwindcss init",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
-    "postinstall": "npm run create-project"
+    "prepublishOnly": "npm run lint"
   },
   "keywords": [],
   "author": "joao vitor viana alves/jvva",
